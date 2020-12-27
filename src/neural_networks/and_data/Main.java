@@ -2,8 +2,6 @@ package neural_networks.and_data;
 
 public class Main {
 
-    private static final String PLACE_HOLDER = "  |  ";
-
     public static void main(String[] args) {
         int[][][] data = Perceptron.andData;
         double[] weights = Perceptron.INITIAL_WEIGHTS;
@@ -30,19 +28,18 @@ public class Main {
     }
 
 
-
     private void printVector(int epochNum, int[][] data, double[] weights, int result, double error, double weightedSum, double[] adjustedWeights) {
         System.out.println("EPOCH # = " + epochNum);
-        System.out.println("W1 ="+ String.format("%.2f", weights[0]));
-        System.out.println("W2 ="+ String.format("%.2f", weights[1]));
-        System.out.println("X1 ="+ data[0][0]);
-        System.out.println("X2 ="+ data[0][1]);
-        System.out.println("TARGET RESULT ="+ data[1][0]);
-        System.out.println("RESULT ="+ result);
-        System.out.println("ERROR ="+ error);
-        System.out.println("WEIGHTED SUM ="+ String.format("%.2f", weightedSum));
-        System.out.println("ADJUSTED_WEIGHT_1 ="+ String.format("%.2f", adjustedWeights[0]));
-        System.out.println("ADJUSTED_WEIGHT_2 ="+ String.format("%.2f", adjustedWeights[1]));
+        System.out.println("W1 =" + String.format("%.2f", weights[0]));
+        System.out.println("W2 =" + String.format("%.2f", weights[1]));
+        System.out.println("X1 =" + data[0][0]);
+        System.out.println("X2 =" + data[0][1]);
+        System.out.println("TARGET RESULT =" + data[1][0]);
+        System.out.println("RESULT =" + result);
+        System.out.println("ERROR =" + error);
+        System.out.println("WEIGHTED SUM =" + String.format("%.2f", weightedSum));
+        System.out.println("ADJUSTED_WEIGHT_1 =" + String.format("%.2f", adjustedWeights[0]));
+        System.out.println("ADJUSTED_WEIGHT_2 =" + String.format("%.2f", adjustedWeights[1]));
         System.out.println("******************************************");
     }
 }
