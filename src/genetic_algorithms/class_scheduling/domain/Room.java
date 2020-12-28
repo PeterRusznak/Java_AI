@@ -1,4 +1,4 @@
-package genetic_algorithms.domain;
+package genetic_algorithms.class_scheduling.domain;
 
 public class Room {
     private String number;

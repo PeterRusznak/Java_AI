@@ -1,7 +1,8 @@
 package genetic_algorithms.class_scheduling.main;
 
-import genetic_algorithms.domain.*;
-import genetic_algorithms.domain.Class;
+import genetic_algorithms.class_scheduling.domain.Course;
+import genetic_algorithms.class_scheduling.domain.Department;
+import genetic_algorithms.class_scheduling.domain.Class;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,8 +42,8 @@ public class Schedule {
             if (xClass.getRoom().getSeatingCapacity() < xClass.getCourse().getMaxNumberOfStudents()) {
                 numberOfConflicts++;
             }
-            for( Class yClass: classes){
-                if((classes.indexOf(yClass) >= classes.indexOf(xClass))){
+            for (Class yClass : classes) {
+                if ((classes.indexOf(yClass) >= classes.indexOf(xClass))) {
                     if (xClass.getMeetingTime() == yClass.getMeetingTime() && xClass.getId() != yClass.getId()) {
                         if (xClass.getRoom() == yClass.getRoom()) {
                             numberOfConflicts++;

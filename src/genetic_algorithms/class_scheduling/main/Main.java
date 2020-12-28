@@ -1,6 +1,6 @@
 package genetic_algorithms.class_scheduling.main;
 
-import genetic_algorithms.domain.Class;
+import genetic_algorithms.class_scheduling.domain.Class;
 
 import java.util.List;
 

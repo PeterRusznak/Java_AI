@@ -1,4 +1,4 @@
-package genetic_algorithms.domain;
+package genetic_algorithms.class_scheduling.domain;
 
 import java.util.List;
 
